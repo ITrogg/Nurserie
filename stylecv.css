@@ -1,0 +1,43 @@
+
+header{
+    background-color: blueviolet;
+    height: 100px;    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+section{
+    background-color: #bbbbbb;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 75px;
+    margin: 10px;
+    transition: all;
+}
+h2{
+    text-align: center;
+}
+article{
+    margin: 20px;
+}
+p,h3,h4{
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    font-size: 20px;
+}
+
+section img {
+    width: 125px;
+}

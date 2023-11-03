@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>Hôtélia</title>
+</head>
+<body>
+    <h1>Votre réservation d'hôtel</h1>
+    <h2> * champs obligatoires</h2>
+    <form method="get">
+        <label> 
+            Votre nom*: <br>
+            <input type="text" name="Lname" placeholder="nom de famille" required> <br>
+        </label>
+        <br>
+        <label>
+            Votre prénom*: <br>
+            <input type="text" name="Fname" placeholder="prénom"required> <br>
+        </label>
+        <br>
+        <label>
+            Votre numéro de téléphone*: <br>
+            <input type="tel" name="phone" placeholder="0601020304" pattern="[0-9]{10}" required> <br>
+        </label>
+        <br>
+        <label>
+            Adresse e-mail*: <br>
+            <input type="email" name="email" required> <br>
+        </label>
+        <br>
+        <label>
+            Sélectionner la ville: <br>
+            <select name="ville">
+                <option value="Lille">Lille</option>
+                <option value="Paris" selected>Paris</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Marseille">Marseille</option>
+                <option value="Nantes">Nantes</option>
+                <option value="Lyon">Lyon</option>
+                <option value="La_Rochelle">La Rochelle</option>
+                <option value="Poitiers">Poitiers</option>
+                <option value="Toulouse">Toulouse</option>
+            </select>
+        </label>
+        <br><br>
+        <label>
+            Date d'arrivée: <br>
+            <input type="date" name="date" min="2023-10-31" required> 
+        </label>
+        <br><br>
+        <label>
+            Nombre de personnes*: <br>
+            <input type="number" name="Nbclt" min="1" max="8" required>
+        </label>
+        <br><br>
+        <label> Vos Options:</label> <br>
+        <label>
+            Climatisation <input type="checkbox" name="option" value="clim">
+        </label>
+        <label>
+            Mini bar <input type="checkbox" name="option" value="mnbar">
+        </label>
+        <label>
+            Jacuzzi <input type="checkbox" name="option" value="jacuzzi">
+        </label>
+        <br><br>
+        <label>
+            <textarea name="comm" id="comm" cols="30" rows="1" placeholder="Ajoutez un commentaire" >
+            </textarea>
+        </label>
+        <br><br>
+        <label>Acceptation des Conditions Générales de Vente (CGV)*</label> <br>
+        <label>
+            <input type="radio" name="CGV" value="ok" checked > J'accepte
+        </label>
+        <label>
+            <input type="radio" name="CGV" value="notok"> Je refuse
+        </label>
+        <br><br>
+        <button type="submit">
+            Envoyer ma demande
+        </button>
+    </form>
+</body>
+</html>
